@@ -1,4 +1,4 @@
-# Projects
+# Multi-Factor-Portfolio-Analysis
 This project uses a helper module called functions1.py, which contains reusable functions for factor analysis, plotting, and performance evaluation. Make sure this file is in the same directory as main.py or adjust the import path accordingly.
 The project outputs various performance metrics for each portfolio, including cumulative returns, annualized performance, and risk-adjusted metrics. Additionally, z-score-based portfolios are analyzed for their effectiveness in capturing factor returns.
 Key results:
