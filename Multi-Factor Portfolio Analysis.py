@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import statsmodels as sm
 import numpy as np
 from scipy.stats import spearmanr
-from Reusable_functions import functions1
+import functions1
 
 # Download stock data
 tickers = ['AAPL', 'MSFT', 'GOOG', 'TSLA']
@@ -113,10 +113,10 @@ else:
     print("[WARNING] Factor return is still all NaN — check if long/short selections are empty.")
 
 # Debug output
-print("🎯 Z-score factor describe:\n", zscore_factor.describe())
-print("🎯 Quantiles describe:\n", quantiles.describe())
-print("🎯 Longs (True/False) sample:\n", longs.head())
-print("🎯 Shorts (True/False) sample:\n", shorts.head())
+print("Z-score factor describe:\n", zscore_factor.describe())
+print("Quantiles describe:\n", quantiles.describe())
+print("Longs (True/False) sample:\n", longs.head())
+print("Shorts (True/False) sample:\n", shorts.head())
 
 # Apply z-score long-short strategy to size factor with custom thresholds
 factor_return, zscore_factor, quantiles, longs, shorts, returns_df = functions1.zscore_long_short_strategy(
